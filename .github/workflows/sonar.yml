@@ -1,4 +1,6 @@
 name: SonarQube Go Coverage
+permissions:
+  contents: read
 
 on:
   push:
