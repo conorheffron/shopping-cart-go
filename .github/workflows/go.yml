@@ -25,10 +25,4 @@ jobs:
       run: go build -v ./...
 
     - name: Test
-      run: go test -coverprofile=coverage.out -v ./...
-
-    - name: Install gocover-cobertura
-      run: go install github.com/t-yuki/gocover-cobertura@v0.0.0-20180217150009-aaee18c8195c
-
-    - name: Generate Cobertura XML report
-      run: ~/go/bin/gocover-cobertura < coverage.out > report.xml
+      run: go test -v ./...
