@@ -2,6 +2,10 @@
 
 [![Go Build](https://github.com/conorheffron/shopping-cart-go/actions/workflows/go.yml/badge.svg)](https://github.com/conorheffron/shopping-cart-go/actions/workflows/go.yml)
 
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=conorheffron_shopping-cart-go)](https://sonarcloud.io/summary/new_code?id=conorheffron_shopping-cart-go)
+
+[Sonar Scan & Test Coverage - Overall Summary]https://sonarcloud.io/summary/overall?id=conorheffron_shopping-cart-go&branch=main
+
 ### Build / Install
 ```
 go build
