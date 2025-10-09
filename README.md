@@ -1,5 +1,7 @@
 # shopping-cart-golang
 
+[![Go Build](https://github.com/conorheffron/shopping-cart-golang/actions/workflows/go.yml/badge.svg)](https://github.com/conorheffron/shopping-cart-golang/actions/workflows/go.yml)
+
 ### Build / Install
 ```
 go build
