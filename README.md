@@ -4,7 +4,7 @@
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=conorheffron_shopping-cart-go)](https://sonarcloud.io/summary/new_code?id=conorheffron_shopping-cart-go)
 
-[Sonar Scan & Test Coverage - Overall Summary]https://sonarcloud.io/summary/overall?id=conorheffron_shopping-cart-go&branch=main
+[Sonar Scan & Test Coverage - Overall Summary](https://sonarcloud.io/summary/overall?id=conorheffron_shopping-cart-go&branch=main)
 
 ### Build / Install
 ```
