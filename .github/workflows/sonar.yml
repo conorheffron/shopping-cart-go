@@ -1,4 +1,4 @@
-name: Build
+name: SonarQube Go Coverage
 
 on:
   push:
@@ -36,4 +36,4 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       with:
         projectBaseDir: .
-        args: -Dsonar.go.coverage.reportPaths=coverage.xml
+        args: -Dsonar.go.coverage.reportPaths=coverage.out,coverage.xml
