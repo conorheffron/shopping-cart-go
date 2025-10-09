@@ -20,7 +20,7 @@ go run main.go
 ```
 ##### OR
 ```
-./shopping-cart 
+./shopping-cart-go
 ```
 
 ### POST Request to Add Item 1
