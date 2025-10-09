@@ -1,12 +1,20 @@
 # shopping-cart-golang
 
-### Build, Run Tests, & API App
+### Build / Install
 ```
 go build
-
+```
+### Run Tests 
+```
 go test -v
-
+```
+### Run API App
+```
 go run main.go
+```
+##### OR
+```
+./shopping-cart 
 ```
 
 ### POST Request to Add Item 1
