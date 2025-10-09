@@ -1,0 +1,39 @@
+name: SonarQube Go Coverage
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Go
+      uses: actions/setup-go@v4
+      with:
+        go-version: '1.24'
+
+    - name: Build
+      run: go build -v ./...
+
+    - name: Test
+      run: go test -coverprofile=coverage.out -v ./...
+
+    - name: Install gocover-cobertura
+      run: go install github.com/t-yuki/gocover-cobertura@v0.0.0-20180217150009-aaee18c8195c
+
+    - name: Generate Cobertura XML report
+      run: ~/go/bin/gocover-cobertura < coverage.out > coverage.xml
+
+    # Add SonarQube scan step here if needed, e.g. using SonarCloud action
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@master
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      with:
+        projectBaseDir: .
+        args: -Dsonar.go.coverage.reportPaths=coverage.out,coverage.xml

@@ -1,3 +1,3 @@
-module shopping-cart
+module shopping-cart-go
 
 go 1.24.0
