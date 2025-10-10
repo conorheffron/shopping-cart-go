@@ -6,6 +6,9 @@
 
 [Sonar Scan & Test Coverage - Overall Summary](https://sonarcloud.io/summary/overall?id=conorheffron_shopping-cart-go&branch=main)
 
+### Tech
+ - Go 1.24, net/http, testing, SonarQube
+
 ### Build / Install
 ```
 go build
