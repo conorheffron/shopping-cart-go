@@ -22,7 +22,7 @@ func TestAddItem(t *testing.T) {
 	}
 }
 
-func TestGetCart(t *testing.T) {
+func TestGetCartNull(t *testing.T) {
 	req := httptest.NewRequest(http.MethodGet, "/api/cart", nil)
 	w := httptest.NewRecorder()
 
@@ -33,7 +33,7 @@ func TestGetCart(t *testing.T) {
 	}
 }
 
-func TestGetCartNull(t *testing.T) {
+func TestGetCartNotNull(t *testing.T) {
 	// Create a new HTTP request with no body
 	req := httptest.NewRequest(http.MethodGet, "/api/cart", nil)
 
