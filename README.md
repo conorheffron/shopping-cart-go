@@ -1,5 +1,7 @@
 # shopping-cart-go
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 [![Go Build](https://github.com/conorheffron/shopping-cart-go/actions/workflows/go.yml/badge.svg)](https://github.com/conorheffron/shopping-cart-go/actions/workflows/go.yml)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=conorheffron_shopping-cart-go)](https://sonarcloud.io/summary/new_code?id=conorheffron_shopping-cart-go)
